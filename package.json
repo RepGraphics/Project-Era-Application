@@ -1,0 +1,44 @@
+{
+  "name": "projectera",
+  "version": "1.0.0",
+  "description": "Application for Projectera",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "keywords": [],
+  "author": "Rep Graphics",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^20.3.12",
+    "electron-builder": "^23.6.0",
+    "electron-forge": "^5.2.4",
+    "electron-packager": "^16.0.0",
+    "electron-prebuilt-compile": "8.2.0",
+    "electron-builder-multi": "9.6.2"
+  },
+  "dependencies": {
+    "electron-prebuilt-compile": "^8.2.0",
+    "electron-window-state": "^5.0.3",
+    "git": "^0.1.5",
+    "electron-builder-multi": "9.6.2"
+  },
+  "build": {
+    "productName": "Project Era",
+    "icon": "./src/arkwhite.png",
+    "appId": "com.projectera.app",
+    "asar": true,
+    "linux": {
+      "target": [
+        "apk"
+      ]
+    },
+    "win": {
+      "target": [
+        "appx",
+        "nsis"
+      ]
+    }
+  }
+}
